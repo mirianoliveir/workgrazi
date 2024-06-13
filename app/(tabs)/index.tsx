@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: '100%',
+    height: '140%',
     width: '140%',
     bottom: 0,
     left: 0,
