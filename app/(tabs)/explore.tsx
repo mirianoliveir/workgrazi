@@ -1,5 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, Platform,  TouchableOpacity } from 'react-native'; 
+import { StyleSheet, Image, Platform,  TouchableOpacity, Linking } from 'react-native'; 
 
 
 import { Collapsible } from '@/components/Collapsible';
@@ -11,31 +11,31 @@ import { ThemedView } from '@/components/ThemedView';
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#F6D6FF', dark: '#e7bbe7' }}
+      headerBackgroundColor={{ light: '#F5E2FD', dark: '#F6D6FF' }}
       headerImage={
         <Image
-          source={require('@/assets/images/eu.png')}
+          source={require('@/assets/images/me.png')}
           style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Minhas Redes Sociais</ThemedText>
+        <ThemedText type="title"> Redes Sociais</ThemedText>
       </ThemedView>
      
      <ThemedView style={styles.containerButton}>
-      <TouchableOpacity style={styles.Button}> 
+      <TouchableOpacity onPress={() => Linking.openURL('https://www.instagram.com/omirianoliveira/')} style={styles.Button}> 
         <Ionicons name='logo-instagram' size={24}/>
         <ThemedText>
           Instagram
          </ThemedText>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.Button}> 
-      <Ionicons name='logo-facebook' size={24}/>
+      <TouchableOpacity  style={styles.Button}> 
+      <Ionicons name='logo-linkedin' size={24}/>
         <ThemedText>
-         Facebook
+        LinkedIn
          </ThemedText>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.Button}> 
+      <TouchableOpacity  onPress={() => Linking.openURL('https://web.whatsapp.com/')} style={styles.Button}> 
       <Ionicons name='logo-whatsapp' size={24}/>
         <ThemedText>
           WhatSapp
@@ -87,20 +87,22 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   Button:{
-    backgroundColor: "#E0B0FF",
-    height: 40,
-    justifyContent: "space-around",
-    alignItems: "center",
-    borderRadius: 5,
-    flexDirection: "row",
+    flexDirection: 'row', // alinha os itens na horizontal
+    alignItems: 'center', // alinha verticalmente
+    justifyContent: 'center', // alinha horizontalmente
+    backgroundColor: '#F5E2FD', // cor de fundo do botão (exemplo)
+    padding: 10, // espaçamento interno
+    borderRadius: 20, // borda arredondada (exemplo)
+   
   },
   reactLogo: {
-    height: 278,
-    width: 360,
+    height: '135%',
+    width: '100%',
     bottom: 0,
     left: 0,
     top: 10,
     position: 'absolute',
+    alignItems: 'center',
     
   },
 });

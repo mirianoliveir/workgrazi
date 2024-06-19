@@ -8,10 +8,10 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#F6D6FF', dark: '#e7bbe7' }}
+      headerBackgroundColor={{ light: '#F5E2FD', dark: '#F6D6FF' }}
       headerImage={
         <Image
-          source={require('@/assets/images/eu.png')}
+          source={require('@/assets/images/me.png')}
           style={styles.reactLogo}
         />
       }>
@@ -22,8 +22,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Sobre: </ThemedText>
         <ThemedText>
-          Este aplicativo foi desenvolvido para a disciplina de {""}
-          Programação para Mobile          
+        Olá! Me chamo Mirian Oliveira e sou estudante de informática. Estou em busca de conhecimento na área, especialmente interessada em programação e desenvolvimento de software. Acredito na importância da tecnologia como ferramenta para resolver problemas e facilitar o dia a dia das pessoas. Estou determinada a aprender e crescer profissionalmente nesse campo dinâmico.          
         </ThemedText>
       </ThemedView>
      
@@ -42,8 +41,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 278,
-    width: 360,
+    height: '135%',
+    width: '100%',
     bottom: 0,
     left: 0,
     top: 10,
