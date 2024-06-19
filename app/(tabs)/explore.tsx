@@ -11,8 +11,13 @@ import { ThemedView } from '@/components/ThemedView';
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#f8d2f8', dark: '#c79cc7' }}
-      headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
+      headerBackgroundColor={{ light: '#F6D6FF', dark: '#e7bbe7' }}
+      headerImage={
+        <Image
+          source={require('@/assets/images/eu.png')}
+          style={styles.reactLogo}
+        />
+      }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Minhas Redes Sociais</ThemedText>
       </ThemedView>
@@ -88,5 +93,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 5,
     flexDirection: "row",
-  }
+  },
+  reactLogo: {
+    height: 278,
+    width: 360,
+    bottom: 0,
+    left: 0,
+    top: 10,
+    position: 'absolute',
+    
+  },
 });
