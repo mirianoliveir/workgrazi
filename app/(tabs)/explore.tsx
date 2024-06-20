@@ -29,40 +29,41 @@ export default function TabTwoScreen() {
           Instagram
          </ThemedText>
       </TouchableOpacity>
-      <TouchableOpacity  style={styles.Button}> 
+      <TouchableOpacity onPress={() => Linking.openURL('https://www.linkedin.com/in/mirian-oliveira-861708314/')}  style={styles.Button}> 
       <Ionicons name='logo-linkedin' size={24}/>
         <ThemedText>
         LinkedIn
          </ThemedText>
       </TouchableOpacity>
-      <TouchableOpacity  onPress={() => Linking.openURL('https://web.whatsapp.com/')} style={styles.Button}> 
+      <TouchableOpacity  onPress={() => Linking.openURL('https://wa.me/05518991431262')} style={styles.Button}> 
       <Ionicons name='logo-whatsapp' size={24}/>
         <ThemedText>
           WhatSapp
          </ThemedText>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.Button}> 
+      <TouchableOpacity onPress={() => Linking.openURL("tel:5518991431262")}  style={styles.Button}> 
       <Ionicons name='keypad-outline' size={24}/>
         <ThemedText>
           Telefone
          </ThemedText>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.Button}> 
+      <TouchableOpacity onPress={() => Linking.openURL('mo727783@gmail.com')}  style={styles.Button}> 
       <Ionicons name='mail' size={24}/>
         <ThemedText>
           E-mail
          </ThemedText>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.Button}> 
-      <Ionicons name='logo-twitter' size={24}/>
-        <ThemedText>
-        Twitter
-         </ThemedText>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.Button}> 
+      
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/mirianoliveir')}  style={styles.Button}> 
       <Ionicons name='logo-github' size={24}/>
         <ThemedText>
           GitHub
+         </ThemedText>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => Linking.openURL('https://discord.gg/mrian._')}  style={styles.Button}> 
+      <Ionicons name='logo-discord' size={24}/>
+        <ThemedText>
+          Discord
          </ThemedText>
       </TouchableOpacity>
       </ThemedView>
